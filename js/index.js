@@ -1,5 +1,5 @@
 tinymce.init({
-    selector: '#descripcion-txt',
+    selector: '#detalles-txt',
     height: 300,
     menubar: false,
     plugins: [
@@ -59,20 +59,7 @@ tinymce.init({
         Gravedad.classList.add("text-center");
         Gravedad.appendChild(caso);
         tr.appendChild(Nombre);
-        tr.appendChild(Ciudad);
-        
-        let opcion1=document.createElement("option");
-        opcion1.innerText="Viña del Mar";
-        let opcion2=document.createElement("option");
-        opcion2.innerText="Quilpué";
-        let opcion3=document.createElement("option");
-        opcion3.innerText="Santiago";
-        let opcion4=document.createElement("option");
-        opcion4.innerText="Otro que no sea Santiago";
-        seleccion.appendChild(opcion1);
-        seleccion.appendChild(opcion2);
-        seleccion.appendChild(opcion3);
-        seleccion.appendChild(opcion4); 
+        tr.appendChild(Ciudad); 
         tr.appendChild(seleccion); 
         tr.appendChild(Detalle);
         tr.appendChild(Gravedad);
